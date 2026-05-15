@@ -1,0 +1,38 @@
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de colores profesionales */
+:root {
+  --primary-blue: #3498db;
+  --dark-blue: #2980b9;
+  --light-blue: #5dade2;
+  --light-gray: #ecf0f1;
+  --medium-gray: #bdc3c7;
+  --dark-gray: #34495e;
+  --text-dark: #2c3e50;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-hover: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--light-gray);
+  overflow-x: hidden;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+}

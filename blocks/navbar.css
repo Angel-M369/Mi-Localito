@@ -1,0 +1,57 @@
+/* Menú desplegable */
+.navbar {
+  position: absolute;
+  top: 57px;
+  left: 0;
+  width: 100%;
+  background-color: #a4ddeb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+/* Mostrar menú cuando checkbox está marcado */
+.header__menu-toggle:checked ~ .navbar {
+  display: block;
+}
+
+.navbar__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__item {
+  border-bottom: 1px solid #eee;
+}
+
+.navbar__link {
+  display: block;
+  padding: 3px 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar__link:hover {
+  background-color: #4e14d4;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    position: absolute;
+    top: 57px;
+    left: 600px;
+    width: 40%;
+    background-color: #a4ddeb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .navbar__link {
+    color: #333;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
