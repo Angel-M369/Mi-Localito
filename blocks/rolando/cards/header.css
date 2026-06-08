@@ -1,0 +1,88 @@
+.header{
+  grid-area: header;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+}
+
+.header--zecharia{
+  background-image: url("../../../images/autores/zecharia_sitchin_foto.jpg");
+  overflow: hidden;
+}
+
+.header--benitez{
+  background-image: url("../../../images/autores/jj_benitez_foto.jpg");
+  overflow: hidden;
+}
+
+.header--daniken{
+  background-image: url("../../../images/autores/von_daniken_foto.jpg");
+  overflow: hidden;
+}
+
+.header--icke{
+  background-image: url("../../../images/autores/david_icke_foto.jpg");
+  overflow: hidden;
+}
+
+.header--anton{
+  background-image: url("../../../images/autores/anton_parks_foto.jpg");
+  background-position: center 20%;
+  overflow: hidden;
+}
+
+.header--freixedo{
+  background-image: url("../../../images/autores/salvador_freixedo_foto.jpg");
+  overflow: hidden;
+}
+
+.header--vega{
+  background-image: url("../../../images/autores/pablo_de_la_vega_foto.jpg");
+  background-position: center 30%;
+  overflow: hidden;
+}
+
+.header--sixto{
+  background-image: url("../../../images/autores/sixto_paz_foto.jpg");
+  background-position: center 20%;
+  overflow: hidden;
+}
+
+.header--zerpa{
+  background-image: url("../../../images/autores/fabio_zerpa_foto.jpg");
+  overflow: hidden;
+}
+
+.header--castillo{
+  background-image: url("../../../images/autores/castillo_rincon_foto.jpg");
+  overflow: hidden;
+}
+
+.header__image{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header{
+    height: 400px;
+  }
+}
+
+@media (min-width:1280px){
+
+  .header{
+    background-image: none;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .header__image{
+    display:block;
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+    border-radius:20px;
+  }
+}

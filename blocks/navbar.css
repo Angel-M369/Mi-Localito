@@ -55,3 +55,34 @@
     text-decoration: none;
   }
 }
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  /*Manetener navbar siempre visible*/
+  .navbar {
+    background-color: transparent;
+    box-shadow: none;
+    display: block !important;
+    left: auto;
+    position: static;
+    top: auto;
+    width: auto;
+  }
+
+  /*Hacer el menu horizontal*/
+  .navbar__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  /*Quitar los bordes de los items*/
+  .navbar__item {
+    border-bottom: none;
+  }
+
+  /*Ajustar links para menu horizontal*/
+  .navbar__link {
+    border-radius: 25px;
+    padding: 10px 15px;
+  }
+}

@@ -1,0 +1,38 @@
+/* MOBILE */
+
+.cards-section{
+display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(9, 74, 136);
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  list-style: none;
+  padding: 20px;
+  justify-items: center;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}

@@ -22,7 +22,7 @@
     <div class="page">
       <header class="header">
         <div class="header__navigation">
-          <a href="index.html" class="header__logo-link"
+          <a href="pages/rolando/index.html" class="header__logo-link"
             ><img
               class="header__logo"
               src="images/menu/logo rolando.webp"
@@ -39,16 +39,16 @@
           <nav class="navbar">
             <ul class="navbar__list">
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Inicio</a>
+                <a href="#Somos" class="navbar__link">Nosotros</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Servicios</a>
+                <a href="#Servicios" class="navbar__link">Servicios</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Productos</a>
+                <a href="#Productos" class="navbar__link">Productos</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Contacto</a>
+                <a href="#Contacto" class="navbar__link">Contacto</a>
               </li>
             </ul>
           </nav>
@@ -62,13 +62,13 @@
       </header>
       <main class="main">
         <section class="about">
-          <h2 class="about__title">Quiénes Somos</h2>
+          <h2 class="about__title" id="Somos">Quiénes Somos</h2>
           <p class="about__description">
             Mi localito es un sitio web hecho para diseñar tiendas online
           </p>
         </section>
         <section class="services">
-          <h2 class="services__title">Qué Hacemos</h2>
+          <h2 class="services__title" id="Servicios">Qué Hacemos</h2>
           <p class="services__description">
             Creamos embudos de venta utilizando las redes sociales y llevando
             ese tráfico de vistas, hasta tu propia tienda online, donde podrás
@@ -76,73 +76,116 @@
           </p>
         </section>
         <section class="products">
-          <h2 class="products__title">
+          <h2 class="products__title" id="Productos">
             Elige el modelo de tu nueva tienda online
           </h2>
-          <article class="card">
-            <img
-              src="images/menu/logoinsta.jfif"
-              class="card__image"
-              alt="imagen de tienda 1"
-            />
-            <div class="card__content">
-              <h2 class="card__title">Tienda basica</h2>
-              <p class="card__text">
-                sencilla pero poderosa herramienta de venta
-              </p>
-              <a href="#" class="card__button">La quiero</a>
-            </div>
-          </article>
-          <article class="card">
-            <img
-              src="images/menu/logoface.jfif"
-              class="card__image"
-              alt="imagen de tienda 1"
-            />
-            <div class="card__content">
-              <h2 class="card__title">Tienda vip</h2>
-              <p class="card__text">poderosay elegante herramienta de venta</p>
-              <a href="#" class="card__button">La quiero</a>
-            </div>
-          </article>
-          <article class="card">
-            <img
-              src="images/menu/logotiktok.jfif"
-              class="card__image"
-              alt="imagen de tienda 1"
-            />
-            <div class="card__content">
-              <h2 class="card__title">Tienda premiun</h2>
-              <p class="card__text">atractiva tienda online</p>
-              <a href="#" class="card__button">La quiero</a>
-            </div>
-          </article>
+          <div class="products__grid">
+            <article class="card">
+              <img
+                src="images/menu/logoinsta.jfif"
+                class="card__image"
+                alt="imagen de tienda 1"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tienda Esencial</h2>
+                <p class="card__text">
+                  La básica para arrancar a vender
+                </p>
+                <a href="#" class="card__button">La quiero</a>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="images/menu/logoface.jfif"
+                class="card__image"
+                alt="imagen de tienda 1"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tienda Nova</h2>
+                <p class="card__text">
+                  poderosa y elegante herramienta de ventas
+                </p>
+                <a href="#" class="card__button">La quiero</a>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="images/menu/logotiktok.jfif"
+                class="card__image"
+                alt="imagen de tienda 1"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tienda Élite</h2>
+                <p class="card__text">crece tu marca y explota tus ventas</p>
+                <a href="#" class="card__button">La quiero</a>
+              </div>
+            </article>
+          </div>
         </section>
       </main>
       <footer class="footer">
         <div class="footer__social">
-          <a href="#" class="footer__social-link">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="footer__social-link">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="footer__social-link">
-            <i class="fab fa-tiktok"></i>
-          </a>
+          <h3 class="footer__title">¡Síguenos!</h3>
+          <div class="footer__social-links">
+            <a href="#" class="footer__social-link">
+              <i class="fab fa-facebook-f"></i> Facebook
+              <img
+                src="images/menu/footerface.jpg"
+                class="footer__image"
+                alt="facebook imagen"
+              />
+            </a>
+            <a href="#" class="footer__social-link">
+              <i class="fab fa-instagram"></i> Instagram
+              <img
+                src="images/menu/footerinsta.jpg"
+                class="footer__image"
+                alt="instagram imagen"
+              />
+            </a>
+            <a href="#" class="footer__social-link">
+              <i class="fab fa-tiktok"></i> tikTok
+              <img
+                src="images/menu/footertiktok.jpg"
+                class="footer__image"
+                alt="tiktok imagen"
+              />
+            </a>
+          </div>
         </div>
-        <div class="footer__links">
-          <a href="#" class="footer__link">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="#" class="footer__link">
-            <i class="fab fa-github"></i> GitHub
-          </a>
+        <div class="footer__portfolio">
+          <h3 class="footer__title">¡Mis Trabajos!</h3>
+          <div class="footer__portfolio-links">
+            <a href="#" class="footer__portfolio-link">
+              <i class="fab fa-linkedin"></i> LinkedIn
+              <img
+                src="images/menu/footerlink.jpg"
+                class="footer__image"
+                alt="linkedin imagen"
+              />
+            </a>
+            <a href="#" class="footer__portfolio-link">
+              <i class="fab fa-github"></i> GitHub
+              <img
+                src="images/menu/footergit.jpg"
+                class="footer__image"
+                alt="github imagen"
+              />
+            </a>
+          </div>
         </div>
         <div class="footer__contact">
-          <a href="#" class="footer__whatsapp">
-            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
-          </a>
+          <h3 class="footer__title" id="Contacto">¡Hablemos!</h3>
+          <div class="footer__contact-links">
+            <a href="#" class="footer__contact-link">
+              <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+              <img
+                src="images/menu/footerwhats.jpg"
+                class="footer__image"
+                alt="WhatsApp imagen"
+              />
+            </a>
+          </div>
         </div>
       </footer>
     </div>

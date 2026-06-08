@@ -1,0 +1,70 @@
+/* =========================
+   MOBILE FIRST
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #02050a 0%,
+    #07111f 50%,
+    #0b1d30 100%
+  );
+  color: #e5e5e5;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.page {
+  min-width: 320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "navbar"
+    "main"
+    "footer";
+}
+
+.page.page--icke{
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "navbar header"
+      "main main"
+      "footer footer";
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "navbar navbar"
+      "header header"
+      "main main"
+      "footer footer";
+  }
+}
+

@@ -1,0 +1,33 @@
+.footer{
+  background: rgb(32, 122, 206);
+  display: flex;
+  grid-area: footer;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.footer__link{
+  background-color: rgba(248, 201, 44, 0.582);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__links {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

@@ -1,0 +1,43 @@
+/* MOBILE */
+
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer__social-icon {
+  width: 70px;
+  border-radius: 50%;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+  .footer__social-icon {
+    width: 100px;
+  }
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+
+  .footer {
+    padding: 50px;
+  }
+
+}

@@ -1,4 +1,13 @@
 /*Estilos para las cards*/
+
+.cards-section{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  padding: 20px;
+} 
+
 .card {
   background: #2d2d2d;
   border-radius: 12px;
@@ -18,26 +27,18 @@
   object-fit: cover;
 }
 
-.card__content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 16px;
-  padding: 20px;
-}
-
 .card__title {
   font-size: 24px;
   text-align: center;
 }
 
-.card__text {
+.card__subtitle {
   line-height: 1.5;
   color: #d0d0d0;
   flex-grow: 1;
 }
 
-.card__button {
+.card__link {
   background: linear-gradient(180deg, #0278fe 0%, #003a7b 100%);
   color: white;
   padding: 12px 18px;
@@ -46,6 +47,6 @@
   transition: opacity 0.3s ease;
 }
 
-.card__button:hover {
+.card__link:hover {
   opacity: 0.8;
 }

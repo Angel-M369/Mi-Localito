@@ -1,0 +1,19 @@
+.button {
+  align-self: center;
+ background: linear-gradient(135deg, #00ff9d, #005eff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.4);
+}

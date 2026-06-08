@@ -1,0 +1,85 @@
+/* MOBILE */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-image: url("../../images/menu/logo\ rolando.webp");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  width: 50px;
+  border-radius: 20px;
+  border: 4px solid rgb(46, 65, 46);
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__title {
+  font-size: 32px;
+  line-height: 1.1;
+  background-color: rgba(38, 191, 211, 0.4);
+  border: 2px solid blue;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.header__description {
+  font-size: 16px;
+  color: rgb(204, 231, 238);
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+  .header {
+    padding: 30px;
+  }
+
+  .header__logo {
+    width: 180px;
+  }
+
+  .header__title {
+    font-size: 48px;
+  }
+
+  .header__description {
+    font-size: 20px;
+  }
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .header__logo {
+    width: 250px;
+  }
+
+  .header__title {
+    font-size: 60px;
+  }
+
+}
