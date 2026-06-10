@@ -1,0 +1,11 @@
+.main{
+    align-items: center;
+    background-color:   rgba(3,35, 54);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    grid-area: main;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+}

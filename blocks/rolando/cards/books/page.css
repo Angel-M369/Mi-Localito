@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body{
+    margin:0;
+    background:rgba(248,201,44,.582);
+    font-family:Arial,sans-serif;
+}
+
+.page{
+    width:100%;
+    min-height:100vh;
+    margin: 0 auto;
+    display:grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: auto 1fr auto;
+}

@@ -1,0 +1,115 @@
+.footer{
+    grid-area:footer;
+    background:rgb(9,74,136);
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    padding:1rem;
+}
+
+.footer__title{
+    background-color: aquamarine;
+    border-radius: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 10px 20px 10px;
+}
+
+/* Primera fila */
+
+.footer__books{
+    align-items: center;
+    background:rgb(14,114,160);
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    padding:1rem;
+}
+
+.footer__books-link{
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/* Segunda fila */
+
+.footer__navigation{
+    align-items:center;
+    background:rgba(117,108,108,.95);
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    gap:1rem;
+    padding:1rem;
+}
+
+/* Todas las imágenes iguales */
+
+.footer__nav-image{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+}
+
+.footer__book-image{
+    border:2px solid blue;
+    border-radius:20px;
+}
+
+.footer__nav-image{
+    border:2px solid rgb(14,114,160);
+    border-radius:20px;
+}
+
+@media screen and (min-width:768px){
+
+    .footer__books{
+        display: grid;
+        justify-items: center;
+        grid-template-areas: "footer__book-link-der" "footer__book-link-izq";
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__book-link-izq{
+        grid-area: footer__book-link-izq;
+    }
+    .footer__book-link-der{
+        grid-area: footer__book-link-der;
+
+    }
+
+    .footer__book-image{
+    width:150px;
+    height:220px;
+    object-fit:cover;
+    }
+
+    .footer__navigation{
+        flex-direction:row;
+        justify-content:space-around;
+    }
+}
+
+@media screen and (min-width:1280px){
+
+     .footer__books{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        justify-items:center;
+        gap:1.5rem;
+    }
+
+    .footer__book-image{
+        width:180px;
+        height:260px;
+        object-fit:cover;
+    }
+
+
+    .footer__books-image,
+    .footer__nav-image{
+        width:100px;
+        height:100px;
+    }
+}

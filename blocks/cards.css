@@ -38,7 +38,7 @@
   flex-grow: 1;
 }
 
-.card__link {
+.card__button {
   background: linear-gradient(180deg, #0278fe 0%, #003a7b 100%);
   color: white;
   padding: 12px 18px;
@@ -47,6 +47,6 @@
   transition: opacity 0.3s ease;
 }
 
-.card__link:hover {
+.card__button:hover {
   opacity: 0.8;
 }

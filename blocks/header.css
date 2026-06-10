@@ -145,3 +145,77 @@
     }
   }
 }
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 1024px) {
+  
+  /*Estilos del titulo*/
+  .header__title {
+    background-color: white;
+    border-radius: 25px;
+    bottom: 170px;
+    display: block;
+    color: black;
+    font-size: 40px;
+    padding: 0 0 0 5px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  /*estilos del hover del titulo*/
+  .header__title:hover {
+    animation-name: surprise;
+    -webkit-animation-name: surprise;
+    -moz-animation-name: surprise;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+  }
+
+  @keyframes surprise {
+    0% {
+      transform: rotate(0deg) scale(1, 1);
+    }
+    10% {
+      transform: rotate(7deg) scale(2, 2);
+    }
+    20% {
+      transform: rotate(-7deg) scale(2, 2);
+    }
+    30% {
+      transform: rotate(7deg) scale(2, 2);
+    }
+    40% {
+      transform: rotate(-7deg) scale(2, 2);
+    }
+    50% {
+      transform: rotate(7deg) scale(2, 2);
+    }
+    60% {
+      transform: rotate(-7deg) scale(2, 2);
+    }
+    70% {
+      transform: rotate(7deg) scale(2, 2);
+    }
+    80% {
+      transform: rotate(-7deg) scale(2, 2);
+    }
+    90% {
+      transform: rotate(7deg) scale(2, 2);
+    }
+    100% {
+      transform: rotate(0deg) scale(1, 1);
+    }
+  }
+
+  /* Estilo del menú hamburguesa */
+.header__menu-label {
+  cursor: pointer;
+  display: none;
+  height: 30px;
+  width: 30px;
+}
+}
