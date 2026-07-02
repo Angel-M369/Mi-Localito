@@ -1,0 +1,265 @@
+.carousel{
+    width:min(100%, 400px);
+    height:260px;
+    perspective:1200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    --radius:140px;
+}
+
+.carousel--caballo{
+    --radius:180px;
+}
+
+.carousel__track{
+    position:relative;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    animation:spin 18s linear infinite;
+}
+
+.carousel__item{
+    position:absolute;
+    width:90px;
+    height:140px;
+    left:50%;
+    top:50px;
+    margin-left: -45px;
+    border-radius:12px;
+    background-size:cover;
+    background-position:center;
+    transform-origin: center center;
+}
+
+/*ANIMACIONES*/
+@keyframes spin-right{
+
+    from{
+        transform:rotateY(0deg);
+    }
+
+    to{
+        transform:rotateY(360deg);
+    }
+}
+
+@keyframes spin-left{
+
+    from{
+        transform:rotateY(360deg);
+    }
+
+    to{
+        transform:rotateY(0deg);
+    }
+}
+
+.carousel--caballo .carousel__track{
+    animation:spin-left 20s linear infinite;
+}
+
+.carousel--popurri .carousel__track{
+    animation:spin-right 16s linear infinite;
+}
+
+.carousel--extras .carousel__track{
+    animation:spin-left 14s linear infinite;
+}
+
+/*CABALLO*/
+.carousel__item--c1{
+    background-image: url(../../../images/caballo/C1.jpg);
+    transform:rotateY(30deg) translateZ(var(--radius));
+}
+
+.carousel__item--c2{
+    background-image: url(../../../images/caballo/C2.jpg);
+    transform:rotateY(60deg) translateZ(var(--radius));
+}
+
+.carousel__item--c3{
+    background-image: url(../../../images/caballo/C3.jpg);
+    transform:rotateY(90deg) translateZ(var(--radius));
+}
+
+.carousel__item--c4{
+    background-image: url(../../../images/caballo/C4.jpg);
+    transform:rotateY(120deg) translateZ(var(--radius));
+}
+
+.carousel__item--c5{
+    background-image: url(../../../images/caballo/C5.jpg);
+    transform:rotateY(150deg) translateZ(var(--radius));
+}
+
+.carousel__item--c6{
+    background-image: url(../../../images/caballo/C6.jpg);
+    transform:rotateY(180deg) translateZ(var(--radius));
+}
+
+.carousel__item--c7{
+    background-image: url(../../../images/caballo/C7.jpg);
+    transform:rotateY(210deg) translateZ(var(--radius));
+}
+
+.carousel__item--c8{
+    background-image: url(../../../images/caballo/C8.jpg);
+    transform:rotateY(240deg) translateZ(var(--radius));
+}
+
+.carousel__item--c9{
+    background-image: url(../../../images/caballo/C9.jpg);
+    transform:rotateY(270deg) translateZ(var(--radius));
+}
+
+.carousel__item--c10{
+    background-image: url(../../../images/caballo/C10.jpg);
+    transform:rotateY(300deg) translateZ(var(--radius));
+}
+
+.carousel__item--c11{
+    background-image: url(../../../images/caballo/C11.jpg);
+    transform:rotateY(330deg) translateZ(var(--radius));
+}
+
+.carousel__item--c12{
+    background-image: url(../../../images/caballo/C12.jpg);
+    transform:rotateY(360deg) translateZ(var(--radius));
+}
+
+/*SEGUNDO CARRUSEL*/
+.carousel__item--bellicena{
+    background-image: url(../../../images/libros-gratis/Bellicena\ Vilca.jpg);
+    transform:rotateY(40deg) translateZ(var(--radius));
+}
+
+.carousel__item--conspiracion{
+    background-image: url(../../../images/libros-gratis/Conspiración.jpg);
+    transform:rotateY(80deg) translateZ(var(--radius));
+}
+
+.carousel__item--extincion{
+    background-image: url(../../../images/libros-gratis/Extincion.jpg);
+    transform:rotateY(120deg) translateZ(var(--radius));
+}
+
+.carousel__item--extra{
+    background-image: url(../../../images/libros-gratis/Extra.jpg);
+    transform:rotateY(160deg) translateZ(var(--radius));
+}
+
+.carousel__item--ganimedes{
+    background-image: url(../../../images/libros-gratis/Ganimedes.jpg);
+    transform:rotateY(200deg) translateZ(var(--radius));
+}
+
+.carousel__item--ganimedes2{
+    background-image: url(../../../images/libros-gratis/Ganimedes2.jpg);
+    transform:rotateY(240deg) translateZ(var(--radius));
+}
+
+.carousel__item--hercobulus{
+    background-image: url(../../../images/libros-gratis/Hercobulus.jpg);
+    transform:rotateY(280deg) translateZ(var(--radius));
+}
+
+.carousel__item--hueca{
+    background-image: url(../../../images/libros-gratis/Hueca.jpg);
+    transform:rotateY(320deg) translateZ(var(--radius));
+}
+
+.carousel__item--humanoides{
+    background-image: url(../../../images/libros-gratis/Humanoides.jpg);
+    transform:rotateY(360deg) translateZ(var(--radius));
+}
+
+/*TERCER CARRUSEL*/
+.carousel__item--libro{
+    background-image: url(../../../images/libros-gratis/Libro.jpg);
+    transform:rotateY(45deg) translateZ(var(--radius));
+}
+
+.carousel__item--origen{
+    background-image: url(../../../images/libros-gratis/Origen.jpg);
+    transform:rotateY(90deg) translateZ(var(--radius));
+}
+
+.carousel__item--protocolos{
+    background-image: url(../../../images/libros-gratis/Protocolos.jpg);
+    transform:rotateY(135deg) translateZ(var(--radius));
+}
+
+.carousel__item--revelada{
+    background-image: url(../../../images/libros-gratis/Revelada.jpg);
+    transform:rotateY(180deg) translateZ(var(--radius));
+}
+
+.carousel__item--secretos{
+    background-image: url(../../../images/libros-gratis/Secretos.jpg);
+    transform:rotateY(225deg) translateZ(var(--radius));
+}
+
+.carousel__item--ufologia{
+    background-image: url(../../../images/libros-gratis/Ufología.jpg);
+    transform:rotateY(270deg) translateZ(var(--radius));
+}
+
+.carousel__item--urantia{
+    background-image: url(../../../images/libros-gratis/urantia.jpg);
+    transform:rotateY(315deg) translateZ(var(--radius));
+}
+
+.carousel__item--verdad{
+    background-image: url(../../../images/libros-gratis/Verdad.jpg);
+    transform:rotateY(360deg) translateZ(var(--radius));
+}
+
+/*TABLET*/
+@media screen and (min-width:768px){
+
+    .carousel{
+        --radius:220px;
+        width:500px;
+        height:320px;
+    }
+
+    .carousel--caballo{
+        --radius:300px;
+    }
+
+    .carousel__item{
+        width:120px;
+        height:180px;
+        margin-left: -60px;
+        transform-origin:center center;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width:1280px){
+
+    .carousel{
+        --radius: 260px;
+        width:700px;
+        height: 450px;
+    }
+
+    .carousel--caballo{
+        --radius:320px
+    }
+
+    .carousel__item{
+        width:150px;
+        height:220px;
+        margin-left: -75px;
+    }
+
+    .carousel--caballo .carousel__track{
+    animation:spin-left 20s linear infinite;
+    }
+
+}

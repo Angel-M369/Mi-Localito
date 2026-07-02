@@ -1,0 +1,30 @@
+.main{
+    align-items:center;
+    background:#125175;
+    grid-area:main;
+    display:flex;
+    flex-direction:column;
+    gap:5rem;
+    padding:2rem 1rem 4rem;
+    transform-style: preserve-3d;
+}
+
+/*TABLET*/
+@media screen and (min-width:768px){
+
+    .main{
+        gap:7rem;
+        padding:4rem 2rem;
+    }
+
+}
+
+/*DESKTOP*/
+@media screen and (min-width:1280px){
+
+    .main{
+        gap:8rem;
+        padding:5rem 3rem;
+    }
+
+}

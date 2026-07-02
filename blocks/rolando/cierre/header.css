@@ -1,0 +1,45 @@
+.header{
+    grid-area:header;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    padding:2rem 1rem;
+    background:#207ace;
+}
+
+.header__title{
+    color:#fff500;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.header__description{
+    max-width:700px;
+    text-align:center;
+    color:white;
+}
+
+/*TABLET*/
+@media screen and (min-width:768px){
+
+    .header{
+        padding:3rem;
+    }
+
+    .header__title{
+        font-size:2rem;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width:1280px){
+
+    .header{
+        padding:4rem;
+    }
+
+    .header__title{
+        font-size:2.5rem;
+    }
+}
